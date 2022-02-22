@@ -1,18 +1,29 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<div class="home">
+		<DigitalClock v-if="isShowing" />
+		<AnalogClock v-else />
+	</div>
+	<button @click="isDisplaying">Toggle</button>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import DigitalClock from "../components/DigitalClock.vue";
+import AnalogClock from "../components/AnalogClock.vue";
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+	components: {
+		DigitalClock,
+		AnalogClock,
+	},
+	data() {
+		return {
+			isShowing: false,
+		};
+	},
+
+	methods: {
+		isDisplaying() {
+			this.isShowing = !this.isShowing;
+		},
+	},
+};
 </script>
