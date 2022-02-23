@@ -1,5 +1,4 @@
 <template>
-	<h1>Analog Clock</h1>
 	<div class="clock-container">
 		<div class="analog">
 			<div class="outer-clock-face">
@@ -134,6 +133,8 @@ export default {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	text-align: center;
+	margin: 20px 10px;
 }
 .analog {
 	position: relative;
@@ -143,7 +144,7 @@ export default {
 		inset 4px 4px 10px rgba(0, 0, 0, 0.5),
 		inset -4px -4px 10px rgba(67, 67, 67, 0.5), 4px 4px 10px rgba(0, 0, 0, 0.3);
 	border-radius: 50%;
-	margin: 50px auto;
+	margin: 100px auto;
 }
 .outer-clock-face {
 	position: relative;

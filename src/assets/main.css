@@ -1,0 +1,24 @@
+:root {
+	--primary-color: #222;
+	--secondary-color: #a9a9a9;
+}
+
+html {
+	transition: all 0.5s ease-in;
+	color: var(--secondary-color);
+}
+
+html.dark {
+	--primary-color: white;
+	--secondary-color: #222;
+}
+
+html.dark {
+	background-color: #111;
+	color: var(--primary-color);
+}
+
+html.dark button {
+	background-color: #111;
+	color: var(--primary-color);
+}

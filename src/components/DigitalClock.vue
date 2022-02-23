@@ -1,12 +1,13 @@
 <template>
-	<h1>Digital Clock</h1>
 	<div class="container">
 		<div class="timer">
-			<div>{{ hours }}</div>
-			<div>:</div>
-			<div>{{ minutes }}</div>
-			<div>:</div>
-			<div>{{ seconds }}</div>
+			<div class="fix-container">
+				<div>{{ hours }}</div>
+				<div>:</div>
+				<div>{{ minutes }}</div>
+				<div>:</div>
+				<div>{{ seconds }}</div>
+			</div>
 		</div>
 	</div>
 </template>
@@ -46,13 +47,33 @@ export default {
 </script>
 
 <style>
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin: 30px 20px;
+}
 .timer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 100px;
+	/* top: 50%;
+	right: 50%;
+	position: absolute; */
 }
 .timer > div {
 	font-family: "alarm clock";
 	font-size: x-large;
+}
+.fix-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: #000 solid;
+	width: 200px;
+	height: 200px;
+	border-radius: 20px;
 }
 </style>

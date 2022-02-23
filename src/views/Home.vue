@@ -27,3 +27,21 @@ export default {
 	},
 };
 </script>
+
+<style scoped>
+.home {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	place-items: center;
+	position: absolute;
+	top: 50%;
+	right: 46%;
+	margin: 30px 20px;
+}
+</style>
